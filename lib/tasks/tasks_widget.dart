@@ -190,7 +190,7 @@ class _TasksWidgetState extends State<TasksWidget> {
                     text: 'Log Out',
                     options: FFButtonOptions(
                       width: 100.0,
-                      height: 40.0,
+                      height: 41.0,
                       padding:
                           EdgeInsetsDirectional.fromSTEB(16.0, 0.0, 16.0, 0.0),
                       iconPadding:
