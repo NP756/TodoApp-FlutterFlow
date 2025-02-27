@@ -11,6 +11,9 @@ export 'completed_model.dart';
 class CompletedWidget extends StatefulWidget {
   const CompletedWidget({super.key});
 
+  static String routeName = 'completed';
+  static String routePath = '/completed';
+
   @override
   State<CompletedWidget> createState() => _CompletedWidgetState();
 }
@@ -24,6 +27,8 @@ class _CompletedWidgetState extends State<CompletedWidget> {
   void initState() {
     super.initState();
     _model = createModel(context, () => CompletedModel());
+
+    WidgetsBinding.instance.addPostFrameCallback((_) => safeSetState(() {}));
   }
 
   @override
